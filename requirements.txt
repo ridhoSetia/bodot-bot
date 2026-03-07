@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+pydub
+groq
+edge-tts
+python-dotenv

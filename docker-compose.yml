@@ -1,0 +1,18 @@
+services:
+  bodot-bot:
+    build: .
+    container_name: bodot_ai_container
+    
+    # Mapping port 8010 sesuai konfigurasi di main.py 
+    ports:
+      - "8010:8010"
+    
+    # Gunakan .env untuk menyimpan GROQ_API_KEY agar aman 
+    env_file:
+      - .env
+    
+    # Volume untuk menyimpan rekaman audio agar tidak hilang saat container dihapus 
+    volumes:
+      - ./recordings:/app/recordings
+    
+    restart: always
