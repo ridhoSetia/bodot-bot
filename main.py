@@ -116,10 +116,16 @@ async def process_audio(request: Request):
         tts_audio.export(out_buf, format="s16le")
         if os.path.exists(tts_path): os.remove(tts_path)
 
+        # Bersihkan reply dari karakter newline agar tidak error di HTTP Header
+        clean_reply = reply.replace("\n", " ").replace("\r", " ").strip()
+
         return Response(
             content=out_buf.read(),
             media_type="application/octet-stream",
-            headers={"X-Transcription": user_text[:100], "X-Reply": reply[:100]}
+            headers={
+                "X-Transcription": user_text[:100].replace("\n", " "), 
+                "X-Reply": clean_reply[:150] # Potong agar tidak terlalu panjang untuk OLED
+            }
         )
     except Exception as e:
         logger.error(f"TTS Error: {e}")
