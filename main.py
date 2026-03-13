@@ -95,15 +95,8 @@ async def websocket_endpoint(websocket: WebSocket):
 @app.post("/process-audio")
 async def process_audio(request: Request):
     audio_data = bytearray()
-
-    if user_text or reply:
-        await manager.broadcast({
-            "user": user_text,
-            "bot": reply,
-            "timestamp": datetime.now().strftime("%H:%M:%S")
-        })
     
-    # try-except untuk menangani ClientDisconnect dari ESP32
+    # 1. Ambil stream data dari ESP32
     try:
         async for chunk in request.stream(): 
             audio_data.extend(chunk)
@@ -111,31 +104,21 @@ async def process_audio(request: Request):
         logger.error(f"Koneksi terputus saat streaming: {e}")
         return Response(status_code=204)
     
-    # Cek apakah data cukup untuk diproses
     if len(audio_data) < 2000: 
         return Response(status_code=204)
 
-    # 1. Load Audio dari data mentah (RAW)
+    # 2. Proses Audio
     audio = AudioSegment.from_file(
         io.BytesIO(audio_data), 
-        format="raw", 
-        sample_width=2, 
-        frame_rate=16000, 
-        channels=1
+        format="raw", sample_width=2, frame_rate=16000, channels=1
     )
 
-    # SIMPAN REKAMAN (Untuk Audit/Cek Noise)
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"{RECORDINGS_DIR}/rec_{ts}.wav"
-    audio.export(filename, format="wav")
-    logger.info(f"Rekaman disimpan: {filename}")
-
-    # Persiapkan Buffer untuk Whisper AI
     wav_buf = io.BytesIO()
     audio.export(wav_buf, format="wav")
     wav_buf.seek(0)
 
-    # STT (Speech To Text)
+    # 3. STT (Speech To Text)
     try:
         transcription = client.audio.transcriptions.create(
             file=("input.wav", wav_buf.read()),
@@ -147,14 +130,20 @@ async def process_audio(request: Request):
         logger.error(f"STT Error: {e}")
         return Response(status_code=204)
 
-    # AI Logic (Filter Keyword "Bodot")
+    # 4. AI Logic
     reply = process_text_with_ai(user_text)
     
-    # Jika transkripsi hanya noise dan tidak mengandung "Bodot", abaikan
     if not reply: 
         return Response(status_code=204)
 
     logger.info(f"input: {user_text} | bodot: {reply}")
+
+    await manager.broadcast({
+        "user": user_text,
+        "bot": reply,
+        "timestamp": datetime.now().strftime("%H:%M:%S")
+    })
+    # ----------------------------------
 
     # 5. TTS (Text To Speech)
     tts_path = f"temp_{ts}.mp3"
@@ -169,10 +158,7 @@ async def process_audio(request: Request):
         tts_audio.export(out_buf, format="s16le")
         if os.path.exists(tts_path): os.remove(tts_path)
 
-        # Ganti karakter newline (\n) dan carriage return (\r) menjadi spasi
         clean_reply = reply.replace("\n", " ").replace("\r", " ").strip()
-
-        # Pastikan hanya karakter ASCII yang dikirim untuk menghindari error encoding
         clean_reply = clean_reply.encode('ascii', 'ignore').decode('ascii')
 
         return Response(
@@ -180,10 +166,9 @@ async def process_audio(request: Request):
             media_type="application/octet-stream",
             headers={
                 "X-Transcription": user_text[:100].replace("\n", " "),
-                "X-Reply": clean_reply[:150] # Tetap potong untuk keamanan OLED
+                "X-Reply": clean_reply[:150]
             }
         )
-    
     except Exception as e:
         logger.error(f"TTS Error: {e}")
         return Response(status_code=204)
