@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodot AI Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .chat-container {
+            height: 70vh;
+            overflow-y: auto;
+        }
+
+        .user-msg {
+            background: #dcf8c6;
+            align-self: flex-end;
+        }
+
+        .bot-msg {
+            background: #ffffff;
+            align-self: flex-start;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <div class="max-w-4xl mx-auto p-5">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-blue-600">Bodot AI Monitor</h1>
+            <p class="text-gray-600">Status: <span id="status" class="text-green-500 font-bold">Online</span></p>
+        </header>
+
+        <div id="chat-box" class="chat-container flex flex-col space-y-4 p-4 bg-gray-50 rounded-lg shadow-inner">
+        </div>
+
+        <div class="mt-4 text-center">
+            <button onclick="fetchHistory()"
+                class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
+                Refresh Histori
+            </button>
+        </div>
+    </div>
+
+    <script>
+        async function fetchHistory() {
+            try {
+                const response = await fetch('/get-history');
+                const data = await response.json();
+                const chatBox = document.getElementById('chat-box');
+                chatBox.innerHTML = '';
+
+                data.history.forEach(msg => {
+                    const div = document.createElement('div');
+                    div.className = `p-3 rounded-lg max-w-xs ${msg.role === 'user' ? 'user-msg ml-auto' : 'bot-msg'}`;
+                    div.innerHTML = `<strong>${msg.role === 'user' ? 'Anda' : 'Bodot'}:</strong> <p>${msg.content}</p>`;
+                    chatBox.appendChild(div);
+                });
+
+                chatBox.scrollTop = chatBox.scrollHeight;
+            } catch (err) {
+                console.error("Gagal mengambil histori:", err);
+            }
+        }
+
+        // Auto-refresh setiap 3 detik untuk memantau request dari ESP32
+        setInterval(fetchHistory, 3000);
+        window.onload = fetchHistory;
+    </script>
+</body>
+
+</html>

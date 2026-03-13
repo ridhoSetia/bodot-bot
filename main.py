@@ -6,6 +6,10 @@ from groq import Groq
 import edge_tts, uvicorn
 from dotenv import load_dotenv
 
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
+from fastapi.responses import HTMLResponse
+
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
@@ -13,7 +17,9 @@ load_dotenv()
 VOICE_ID = "id-ID-ArdiNeural"
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 client = Groq(api_key=GROQ_API_KEY)
+
 app = FastAPI()
+templates = Jinja2Templates(directory="templates")
 
 RECORDINGS_DIR = "recordings"
 if not os.path.exists(RECORDINGS_DIR): os.makedirs(RECORDINGS_DIR)
@@ -138,6 +144,16 @@ async def process_audio(request: Request):
     except Exception as e:
         logger.error(f"TTS Error: {e}")
         return Response(status_code=204)
+    
+@app.get("/", response_class=HTMLResponse)
+async def get_dashboard(request: Request):
+    # Mengirim histori ke tampilan web saat pertama buka
+    return templates.TemplateResponse("index.html", {"request": request, "history": history[1:]})
+
+# Tambahkan endpoint ini untuk mengambil update histori terbaru lewat JS
+@app.get("/get-history")
+async def get_history():
+    return {"history": history[1:]}
     
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8010)
