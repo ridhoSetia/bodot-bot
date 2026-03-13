@@ -33,6 +33,12 @@
         </header>
 
         <div id="chat-box" class="chat-container flex flex-col space-y-4 p-4 bg-gray-50 rounded-lg shadow-inner">
+            {% for msg in history %}
+            <div class="p-3 rounded-lg max-w-xs {{ 'user-msg ml-auto' if msg.role == 'user' else 'bot-msg' }}">
+                <strong>{{ 'User' if msg.role == 'user' else 'Bodot' }}:</strong>
+                <p>{{ msg.content }}</p>
+            </div>
+            {% endfor %}
         </div>
 
         <div class="mt-4 text-center">
@@ -44,29 +50,39 @@
     </div>
 
     <script>
-        async function fetchHistory() {
-            try {
-                const response = await fetch('/get-history');
-                const data = await response.json();
-                const chatBox = document.getElementById('chat-box');
-                chatBox.innerHTML = '';
+        const chatBox = document.getElementById('chat-box');
+        const statusLabel = document.getElementById('status');
+        
+        // Inisialisasi WebSocket
+        const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+        const ws = new WebSocket(`${protocol}//${window.location.host}/ws`);
 
-                data.history.forEach(msg => {
-                    const div = document.createElement('div');
-                    div.className = `p-3 rounded-lg max-w-xs ${msg.role === 'user' ? 'user-msg ml-auto' : 'bot-msg'}`;
-                    div.innerHTML = `<strong>${msg.role === 'user' ? 'Anda' : 'Bodot'}:</strong> <p>${msg.content}</p>`;
-                    chatBox.appendChild(div);
-                });
+        ws.onopen = () => {
+            statusLabel.innerText = "Terhubung (Live)";
+            statusLabel.className = "text-green-500 font-bold";
+        };
 
-                chatBox.scrollTop = chatBox.scrollHeight;
-            } catch (err) {
-                console.error("Gagal mengambil histori:", err);
-            }
+        ws.onmessage = (event) => {
+            const data = JSON.parse(event.data);
+            // Tambahkan pesan user ke UI
+            appendMessage(data.user, 'user');
+            // Tambahkan balasan Bodot ke UI
+            appendMessage(data.bot, 'bot');
+        };
+
+        ws.onclose = () => {
+            statusLabel.innerText = "Terputus";
+            statusLabel.className = "text-red-500 font-bold";
+        };
+
+        function appendMessage(text, role) {
+            if (!text) return;
+            const div = document.createElement('div');
+            div.className = `p-3 rounded-lg max-w-xs ${role === 'user' ? 'user-msg ml-auto' : 'bot-msg'}`;
+            div.innerHTML = `<strong>${role === 'user' ? 'User' : 'Bodot'}:</strong> <p>${text}</p>`;
+            chatBox.appendChild(div);
+            chatBox.scrollTop = chatBox.scrollHeight;
         }
-
-        // Auto-refresh setiap 3 detik untuk memantau request dari ESP32
-        setInterval(fetchHistory, 3000);
-        window.onload = fetchHistory;
     </script>
 </body>
 

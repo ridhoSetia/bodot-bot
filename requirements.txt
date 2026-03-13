@@ -4,3 +4,5 @@ pydub
 groq
 edge-tts
 python-dotenv
+jinja2 
+websockets
