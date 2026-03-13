@@ -12,9 +12,9 @@ Bodot AI adalah asisten suara pintar berbasis AI yang dirancang untuk diintegras
 
 ---
 
-## 🔌 Panduan Wiring (Perangkat Keras)
+## 🔌 Panduan Wiring
 
-Berikut adalah skema koneksi kabel untuk menghubungkan ESP32 dengan modul audio I2S:
+Berikut adalah skema wiring untuk menghubungkan ESP32 dengan modul audio I2S:
 
 ### 1. I2S Microphone (INMP441)
 
@@ -33,6 +33,7 @@ Berikut adalah skema koneksi kabel untuk menghubungkan ESP32 dengan modul audio 
 | --- | --- | --- |
 | **Vin** | 5V | Daya (Gunakan 5V untuk suara keras) |
 | **GND** | GND | Ground |
+| **GAIN**| GND
 | **LRC** | GPIO 27 | Left/Right Clock |
 | **BCLK** | GPIO 14 | Bit Clock |
 | **DIN** | GPIO 26 | Data In |
@@ -68,21 +69,18 @@ docker-compose up -d
 
 ### 2. Konfigurasi Firmware (ESP32)
 
-Buka file `speech-to-text.ino` di Arduino IDE dan **sesuaikan bagian berikut** agar sesuai dengan lingkungan kamu:
+Buka file `bodot.ino` di Arduino IDE dan **sesuaikan bagian berikut** agar sesuai dengan environtment kamu:
 
 ```cpp
 // ================= SESUAIKAN DI SINI =================
 const char* ssid = "NAMA_WIFI_KAMU";
 const char* password = "PASSWORD_WIFI_KAMU";
 
-// Ganti dengan IP Address PC/Server yang menjalankan Docker
-// Jika pakai Tailscale/VPN, masukkan IP dari VPN tersebut
 const char* serverHost = "IP_ADDRESS_SERVER_KAMU"; 
 const int serverPort = 8010; 
 
 // Sesuaikan Pin jika kamu menggunakan layout berbeda
 #define BUTTON_PIN    4
-#define RELAY_PIN     2
 // =====================================================
 
 ```
