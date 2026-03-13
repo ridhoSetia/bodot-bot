@@ -20,7 +20,7 @@ if not os.path.exists(RECORDINGS_DIR): os.makedirs(RECORDINGS_DIR)
 
 SYSTEM_PROMPT = {
     "role": "system", 
-    "content": "Kamu adalah Bodot. Jawab maksimal 50 kata. DILARANG KERAS menggunakan 'newline' atau baris baru (\n). Semua teks HARUS dalam satu baris utuh. Jika ada daftar atau poin, tuliskan menyamping dan pisahkan hanya dengan koma. Jangan gunakan karakter spesial selain tanda baca dasar."
+    "content": "Kamu adalah Bodot. Jawab maksimal 35 kata. DILARANG KERAS menggunakan 'newline' atau baris baru (\n). Semua teks HARUS dalam satu baris utuh. Jika ada daftar atau poin, tuliskan menyamping dan pisahkan hanya dengan koma. Jangan gunakan karakter spesial selain tanda baca dasar."
 }
 
 history = [SYSTEM_PROMPT]
