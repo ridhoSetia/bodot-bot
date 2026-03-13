@@ -18,7 +18,7 @@ app = FastAPI()
 RECORDINGS_DIR = "recordings"
 if not os.path.exists(RECORDINGS_DIR): os.makedirs(RECORDINGS_DIR)
 
-SYSTEM_PROMPT = {"role": "system", "content": "Kamu robot bernama Bodot. Jawab sangat singkat dan santai"}
+SYSTEM_PROMPT = {"role": "system", "content": "Kamu robot bernama Bodot. Jawab sangat singkat dan santai, jika jawaban terdapat list nomor urut angka, jangan jadikan line baru, cukup buat semua response dalam bentuk satu baris teks saja, pisahkan saja dengan koma untuk menghindari error response"}
 history = [SYSTEM_PROMPT]
 
 def process_text_with_ai(user_text: str) -> str:
