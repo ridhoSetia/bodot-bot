@@ -10,6 +10,10 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
 
+import json
+from fastapi import FastAPI, Request, Response, WebSocket, WebSocketDisconnect
+from typing import List
+
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
@@ -20,6 +24,24 @@ client = Groq(api_key=GROQ_API_KEY)
 
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
+
+# Tambahkan list untuk menyimpan koneksi aktif
+class ConnectionManager:
+    def __init__(self):
+        self.active_connections: List[WebSocket] = []
+
+    async def connect(self, websocket: WebSocket):
+        await websocket.accept()
+        self.active_connections.append(websocket)
+
+    def disconnect(self, websocket: WebSocket):
+        self.active_connections.remove(websocket)
+
+    async def broadcast(self, message: dict):
+        for connection in self.active_connections:
+            await connection.send_text(json.dumps(message))
+
+manager = ConnectionManager()
 
 RECORDINGS_DIR = "recordings"
 if not os.path.exists(RECORDINGS_DIR): os.makedirs(RECORDINGS_DIR)
@@ -56,9 +78,30 @@ def process_text_with_ai(user_text: str) -> str:
     except Exception as e:
         logger.error(f"AI Error: {e}"); return "Aduh, otak Bodot korslet."
 
+@app.get("/", response_class=HTMLResponse)
+async def get_dashboard(request: Request):
+    # Mengirim histori ke tampilan web saat pertama buka
+    return templates.TemplateResponse("index.html", {"request": request, "history": history[1:]})
+
+@app.websocket("/ws")
+async def websocket_endpoint(websocket: WebSocket):
+    await manager.connect(websocket)
+    try:
+        while True:
+            await websocket.receive_text() # Menjaga koneksi tetap hidup
+    except WebSocketDisconnect:
+        manager.disconnect(websocket)
+
 @app.post("/process-audio")
 async def process_audio(request: Request):
     audio_data = bytearray()
+
+    if user_text or reply:
+        await manager.broadcast({
+            "user": user_text,
+            "bot": reply,
+            "timestamp": datetime.now().strftime("%H:%M:%S")
+        })
     
     # try-except untuk menangani ClientDisconnect dari ESP32
     try:
@@ -144,16 +187,6 @@ async def process_audio(request: Request):
     except Exception as e:
         logger.error(f"TTS Error: {e}")
         return Response(status_code=204)
-    
-@app.get("/", response_class=HTMLResponse)
-async def get_dashboard(request: Request):
-    # Mengirim histori ke tampilan web saat pertama buka
-    return templates.TemplateResponse("index.html", {"request": request, "history": history[1:]})
-
-# Tambahkan endpoint ini untuk mengambil update histori terbaru lewat JS
-@app.get("/get-history")
-async def get_history():
-    return {"history": history[1:]}
     
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8010)
