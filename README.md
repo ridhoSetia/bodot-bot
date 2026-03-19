@@ -73,11 +73,8 @@ Buka file `bodot.ino` di Arduino IDE dan **sesuaikan bagian berikut** agar sesua
 
 ```cpp
 // ================= SESUAIKAN DI SINI =================
-const char* ssid = "NAMA_WIFI_KAMU";
-const char* password = "PASSWORD_WIFI_KAMU";
-
 const char* serverHost = "IP_ADDRESS_SERVER_KAMU"; 
-const int serverPort = 8010; 
+const int serverPort = portmu; 
 
 // Sesuaikan Pin jika kamu menggunakan layout berbeda
 #define BUTTON_PIN    4

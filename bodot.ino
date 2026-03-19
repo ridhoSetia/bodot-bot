@@ -4,10 +4,9 @@
 #include <Adafruit_SSD1306.h>
 #include <WiFi.h>
 #include <WiFiClient.h>
+#include <WiFiManager.h>
 
 // ================= CONFIG =================
-const char* ssid = "NAMA_WIFI";
-const char* password = "PASSWORD_WIFI";
 const char* serverHost = "IP_ADDRESS_SERVER_KAMU"; 
 const int serverPort = 80;
 
@@ -163,12 +162,15 @@ const unsigned char petrik_diam [] PROGMEM = {
 	0x7f, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff
 };
 
+
 // ================= DISPLAY =================
 void showStatus(String line1, String line2) {
   display.clearDisplay();
   display.setTextSize(1);
-  display.setCursor(0, 0); display.println(line1);
-  display.setCursor(0, 10); display.println(line2);
+  display.setCursor(0, 0);
+  display.println(line1);
+  display.setCursor(0, 10);
+  display.println(line2);
   display.display();
 }
 
@@ -188,10 +190,10 @@ void setupI2S(i2s_mode_t mode) {
     .tx_desc_auto_clear = true
   };
   i2s_pin_config_t pins = {
-    .bck_io_num  = (mode & I2S_MODE_RX) ? I2S_MIC_SCK  : I2S_SPK_BCLK,
-    .ws_io_num   = (mode & I2S_MODE_RX) ? I2S_MIC_WS   : I2S_SPK_LRC,
-    .data_out_num= (mode & I2S_MODE_TX) ? I2S_SPK_DIN  : I2S_PIN_NO_CHANGE,
-    .data_in_num = (mode & I2S_MODE_RX) ? I2S_MIC_SD   : I2S_PIN_NO_CHANGE
+    .bck_io_num = (mode & I2S_MODE_RX) ? I2S_MIC_SCK : I2S_SPK_BCLK,
+    .ws_io_num = (mode & I2S_MODE_RX) ? I2S_MIC_WS : I2S_SPK_LRC,
+    .data_out_num = (mode & I2S_MODE_TX) ? I2S_SPK_DIN : I2S_PIN_NO_CHANGE,
+    .data_in_num = (mode & I2S_MODE_RX) ? I2S_MIC_SD : I2S_PIN_NO_CHANGE
   };
   i2s_driver_install(I2S_PORT, &cfg, 0, NULL);
   i2s_set_pin(I2S_PORT, &pins);
@@ -237,7 +239,10 @@ void playAudio(int contentLength) {
   }
 
   uint8_t* buf = (uint8_t*)malloc(READ_BUF);
-  if (!buf) { Serial.println("[PLAY] malloc gagal!"); return; }
+  if (!buf) {
+    Serial.println("[PLAY] malloc gagal!");
+    return;
+  }
 
   size_t written;
   int remaining = contentLength;
@@ -247,11 +252,17 @@ void playAudio(int contentLength) {
 
   while (remaining > 0 && client.connected() && millis() - lastData < 8000) {
     int avail = client.available();
-    if (avail <= 0) { delay(1); continue; }
+    if (avail <= 0) {
+      delay(1);
+      continue;
+    }
 
     int toRead = min(avail, min(READ_BUF, remaining));
     int len = client.read(buf, toRead);
-    if (len <= 0) { delay(1); continue; }
+    if (len <= 0) {
+      delay(1);
+      continue;
+    }
 
     lastData = millis();
     remaining -= len;
@@ -268,35 +279,81 @@ void playAudio(int contentLength) {
 // ================= SETUP =================
 void setup() {
   Serial.begin(115200);
-  pinMode(BUTTON_PIN, INPUT_PULLUP);
-  pinMode(RELAY_PIN, OUTPUT); digitalWrite(RELAY_PIN, LOW);
-  pinMode(ledConn, OUTPUT);   digitalWrite(ledConn, LOW);
-  pinMode(ledThinking, OUTPUT); digitalWrite(ledThinking, LOW);
 
+  // Setup PIN
+  pinMode(BUTTON_PIN, INPUT_PULLUP);
+  pinMode(RELAY_PIN, OUTPUT);
+  digitalWrite(RELAY_PIN, LOW);
+  pinMode(ledConn, OUTPUT);
+  digitalWrite(ledConn, LOW);
+  pinMode(ledThinking, OUTPUT);
+  digitalWrite(ledThinking, LOW);
+
+  // Setup Display
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
   display.setTextWrap(true);
   display.setTextColor(WHITE);
-  showStatus("WIFI", "Connecting...");
 
-  WiFi.begin(ssid, password);
-  while (WiFi.status() != WL_CONNECTED) delay(500);
-  Serial.println("WiFi: " + WiFi.localIP().toString());
+  // Tampilkan status di OLED
+  showStatus("WIFI CONFIG", "Connect to AP:");
+  display.setCursor(0, 20);
+  display.println("ESP32_BODOT_SETUP");
+  display.display();
 
+  // --- BAGIAN WIFIMANAGER ---
+  WiFiManager wm;
+
+  // Menghapus settingan lama
+  // wm.resetSettings();
+
+  // Jika gagal konek ke WiFi yang tersimpan, ESP32 akan jadi Access Point (AP)
+  // Nama AP: "ESP32_BODOT_SETUP"
+  if (!wm.autoConnect("ESP32_BODOT_SETUP")) {
+    showStatus("WIFI ERROR", "Restarting...");
+    delay(3000);
+    ESP.restart();
+  }
+
+  // Jika sampai sini, berarti sudah konek ke WiFi
+  Serial.println("WiFi Connected!");
+  Serial.println("IP: " + WiFi.localIP().toString());
+  showStatus("WIFI CONNECTED", WiFi.localIP().toString());
+  delay(2000);
+
+  // Lanjut ke koneksi server
   showStatus("SERVER", "Pre-connecting...");
-  if (connectToServer()) showStatus("BODOT READY", "Tahan Tombol");
-  else { showStatus("BODOT READY", "Server offline?"); digitalWrite(ledConn, HIGH); }
+  if (connectToServer()) {
+    showStatus("BODOT READY", "Tahan Tombol");
+  } else {
+    showStatus("BODOT READY", "Server offline?");
+    digitalWrite(ledConn, HIGH);
+  }
 
   setupI2S(I2S_MODE_RX);
 }
-
 // ================= LOOP =================
 void loop() {
   if (WiFi.status() != WL_CONNECTED) {
     showStatus("WIFI LOST", "Reconnecting...");
-    WiFi.disconnect(); WiFi.begin(ssid, password);
+    Serial.println("WiFi Lost. Terputus...");
+
+    // Mencoba menyambung kembali ke WiFi yang terakhir tersimpan
+    WiFi.reconnect();
+
     unsigned long t = millis();
-    while (WiFi.status() != WL_CONNECTED && millis() - t < 10000) delay(500);
-    if (WiFi.status() != WL_CONNECTED) return;
+    // Tunggu maksimal 10 detik untuk menyambung kembali
+    while (WiFi.status() != WL_CONNECTED && millis() - t < 10000) {
+      delay(500);
+      Serial.print(".");
+    }
+
+    if (WiFi.status() != WL_CONNECTED) {
+      showStatus("WIFI ERROR", "Gagal Reconnect");
+      return;  // Keluar dari loop dan coba lagi di putaran berikutnya
+    }
+
+    showStatus("WIFI BACK", "Connected!");
+    delay(1000);
   }
 
   if (digitalRead(BUTTON_PIN) == LOW) {
@@ -304,24 +361,26 @@ void loop() {
     if (!connectToServer()) {
       digitalWrite(ledConn, HIGH);
       showStatus("CONN FAILED", "Cek server/wifi");
-      delay(1000); return;
+      delay(1000);
+      return;
     }
 
     // ---- FASE 1: REKAM & KIRIM AUDIO ----
     client.println("POST /process-audio HTTP/1.1");
-    client.print("Host: "); client.println(serverHost);
+    client.print("Host: ");
+    client.println(serverHost);
     client.println("Content-Type: application/octet-stream");
     client.println("Transfer-Encoding: chunked");
     client.println("Connection: keep-alive");
     client.println();
 
     setupI2S(I2S_MODE_RX);
-    display.clearDisplay(); // Bersihkan layar
+    display.clearDisplay();  // Bersihkan layar
 
     // drawBitmap(x, y, data, lebar, tinggi, warna)
     display.drawBitmap(0, 0, petrik_diam, 128, 64, WHITE);
 
-    display.display(); // Tampilkan ke layar
+    display.display();  // Tampilkan ke layar
 
     int32_t* mBuf = (int32_t*)malloc(512 * 4);
     uint8_t* sBuf = (uint8_t*)malloc(512 * 2);
@@ -333,8 +392,8 @@ void loop() {
         int samples = br / 4;
         for (int i = 0; i < samples; i++) {
           int16_t s = mBuf[i] >> 14;
-          sBuf[i*2]   = s & 0xFF;
-          sBuf[i*2+1] = (s >> 8) & 0xFF;
+          sBuf[i * 2] = s & 0xFF;
+          sBuf[i * 2 + 1] = (s >> 8) & 0xFF;
         }
         client.print(samples * 2, HEX);
         client.print("\r\n");
@@ -344,7 +403,8 @@ void loop() {
     }
     client.print("0\r\n\r\n");
     client.flush();
-    free(mBuf); free(sBuf);
+    free(mBuf);
+    free(sBuf);
 
     // ---- FASE 2: BACA HEADER RESPONSE ----
     digitalWrite(ledThinking, HIGH);
@@ -360,20 +420,19 @@ void loop() {
     while (client.connected() && millis() - headerTimeout < 10000) {
       if (client.available()) {
         String line = client.readStringUntil('\n');
-        line.trim(); // Menghapus \r dan spasi di ujung 
+        line.trim();  // Menghapus \r dan spasi di ujung
 
         if (line.length() == 0) {
           headerEnded = true;
-          break; 
+          break;
         }
 
         // Gunakan pengecekan case-insensitive atau cek kedua kemungkinan
         if (line.startsWith("Content-Length:") || line.startsWith("content-length:")) {
           contentLength = line.substring(line.indexOf(':') + 1).toInt();
-        } 
-        else if (line.startsWith("X-Reply:") || line.startsWith("x-reply:")) {
+        } else if (line.startsWith("X-Reply:") || line.startsWith("x-reply:")) {
           aiReply = line.substring(line.indexOf(':') + 1);
-          aiReply.trim(); // Pastikan tidak ada spasi sisa 
+          aiReply.trim();  // Pastikan tidak ada spasi sisa
           handleSmartHome(aiReply);
         }
       }
@@ -382,10 +441,10 @@ void loop() {
     // ---- FASE 3: PLAYBACK ----
     if (headerEnded) {
       digitalWrite(ledThinking, LOW);
-      
+
       display.clearDisplay();
       display.setTextSize(1);
-      display.setCursor(0, 0); 
+      display.setCursor(0, 0);
       display.println(aiReply);
       display.display();
 
@@ -393,26 +452,26 @@ void loop() {
       delay(100);
       playAudio(contentLength);
       setupI2S(I2S_MODE_RX);
-      
+
       // --- TAMBAHAN LOGIKA BARU ---
       // 1. Tunggu dulu sampai tombol benar-benar dilepas (antisipasi kalau masih ditekan)
-      while (digitalRead(BUTTON_PIN) == LOW) { delay(10); } 
-      
+      while (digitalRead(BUTTON_PIN) == LOW) { delay(10); }
+
       // 2. Berhenti di sini! Tetap tampilkan balasan AI sampai tombol ditekan lagi
       // Ini akan membuat layar tetap pada "BODOT: [aiReply]"
-      while (digitalRead(BUTTON_PIN) == HIGH) { delay(10); } 
-      
+      while (digitalRead(BUTTON_PIN) == HIGH) { delay(10); }
+
       // 3. Setelah ditekan lagi, baru bersihkan layar untuk masuk ke mode SIAP
       showStatus("SIAP", "Tahan tombol...");
-      
+
       // Tunggu sebentar agar tidak langsung mentrigger rekaman baru
-      delay(500); 
+      delay(500);
     } else {
       digitalWrite(ledThinking, LOW);
       showStatus("ERROR", "No Response");
       client.stop();
       // Tambahkan delay agar pesan error terbaca
-      delay(2000); 
+      delay(2000);
     }
 
     showStatus("SIAP", "Tahan tombol...");
