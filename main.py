@@ -157,35 +157,45 @@ async def process_audio(request: Request):
     logger.info(f"input: {user_text} | bodot: {reply}")
 
     # 5. TTS (Text To Speech)
-    tts_path = f"temp_{ts}.mp3"
     try:
-        tts = edge_tts.Communicate(reply, VOICE_ID)
-        await tts.save(tts_path)
+        # Gunakan Communicate secara langsung ke buffer untuk menghindari I/O disk
+        communicate = edge_tts.Communicate(reply, VOICE_ID)
         
-        tts_audio = AudioSegment.from_mp3(tts_path)
+        # Kumpulkan semua chunk audio ke dalam BytesIO
+        tts_data = io.BytesIO()
+        async for chunk in communicate.stream():
+            if chunk["type"] == "audio":
+                tts_data.write(chunk["data"])
+        
+        if tts_data.tell() == 0:
+            raise ValueError("Data audio kosong dari Edge-TTS")
+
+        tts_data.seek(0)
+        
+        # Konversi format audio agar sesuai kebutuhan (16kHz, mono, s16le)
+        tts_audio = AudioSegment.from_mp3(tts_data)
         tts_audio = tts_audio.set_frame_rate(16000).set_channels(1).set_sample_width(2)
         
         out_buf = io.BytesIO()
         tts_audio.export(out_buf, format="s16le")
-        if os.path.exists(tts_path): os.remove(tts_path)
+        out_buf.seek(0)
 
-        # Ganti karakter newline (\n) dan carriage return (\r) menjadi spasi
-        clean_reply = reply.replace("\n", " ").replace("\r", " ").strip()
-
-        # Pastikan hanya karakter ASCII yang dikirim untuk menghindari error encoding
-        clean_reply = clean_reply.encode('ascii', 'ignore').decode('ascii')
+        # Bersihkan teks untuk header (Hanya karakter alfanumerik & tanda baca dasar)
+        import re
+        clean_reply = re.sub(r'[^\x20-\x7E]', '', reply) # Hapus non-ASCII
+        clean_reply = clean_reply.replace('"', "'")      # Hindari konflik kutipan
 
         return Response(
             content=out_buf.read(),
             media_type="application/octet-stream",
             headers={
-                "X-Transcription": user_text[:100].replace("\n", " "),
-                "X-Reply": clean_reply[:150] # Tetap potong untuk keamanan OLED
+                "X-Transcription": user_text[:50].replace("\n", " "),
+                "X-Reply": clean_reply[:100]
             }
         )
     
     except Exception as e:
-        logger.error(f"TTS Error: {e}")
+        logger.error(f"TTS Error detail: {type(e).__name__} - {e}")
         return Response(status_code=204)
     
 if __name__ == "__main__":
