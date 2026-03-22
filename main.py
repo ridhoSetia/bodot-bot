@@ -81,7 +81,11 @@ def process_text_with_ai(user_text: str) -> str:
 @app.get("/", response_class=HTMLResponse)
 async def get_dashboard(request: Request):
     # Mengirim histori ke tampilan web saat pertama buka
-    return templates.TemplateResponse("index.html", {"request": request, "history": history[1:]})
+    return templates.TemplateResponse(
+        request=request, 
+        name="index.html", 
+        context={"history": history[1:]}
+    )
 
 @app.websocket("/ws")
 async def websocket_endpoint(websocket: WebSocket):
