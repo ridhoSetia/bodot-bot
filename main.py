@@ -23,6 +23,11 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 client = Groq(api_key=GROQ_API_KEY)
 
 app = FastAPI()
+
+# Mengizinkan FastAPI membaca file fisik dari folder "static" 
+# dan mengeksposnya melalui rute URL "/static"
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
 templates = Jinja2Templates(directory="templates")
 
 # Tambahkan list untuk menyimpan koneksi aktif
