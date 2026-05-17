@@ -1,0 +1,3026 @@
+[
+  {
+    "nama": "Muhammad Nabil Rahmatullah",
+    "nim": "2409106046",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "File backup_home.sh tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal10": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      }
+    },
+    "total": 95,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "Muhammad Britama Putra Jaya",
+    "nim": "2409106047",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      }
+    },
+    "total": 70,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "Miftahul Fauzan",
+    "nim": "2409106048",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal10": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      }
+    },
+    "total": 95,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "Muhammad Naufal Adi Brata",
+    "nim": "2409106049",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 5,
+        "catatan": "Isi proses.txt tidak sesuai atau kurang baris."
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      },
+      "soal10": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      }
+    },
+    "total": 80,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "Ananda Daffa Harahap",
+    "nim": "2409106050",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "Direktori soal8 tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "File artikel.html tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      }
+    },
+    "total": 65,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "Muhammad Husein Permadi",
+    "nim": "2409106051",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 9,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal6": {
+        "skor": 5,
+        "catatan": "Script tidak mengandung command tar."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 89,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "Muhammad Riva Fachrodhiya",
+    "nim": "2409106053",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 8,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 12,
+        "catatan": "Lengkap"
+      },
+      "soal10": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      }
+    },
+    "total": 90,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106054",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Direktori soal1 tidak ditemukan."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "Direktori soal2 tidak ditemukan."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "Direktori soal3 tidak ditemukan."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "Direktori soal4 tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "Direktori soal7 tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "Direktori soal8 tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      }
+    },
+    "total": 5,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106055",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Direktori soal1 tidak ditemukan."
+      },
+      "soal2": {
+        "skor": 6,
+        "catatan": "File angka/genap/ganjil tidak lengkap."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "File proses.txt tidak ditemukan/berupa direktori."
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "Direktori soal8 tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 26,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "\" Dzaki dengan NIM 2409106056 Dari kelas B'24 Info",
+    "nim": "2409106056",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 5,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "Direktori soal3 tidak ditemukan."
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "File profil.html tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "Direktori soal7 tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "File artikel.html tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      }
+    },
+    "total": 45,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "DIMAS FIRJATULLAH ISLAMAY",
+    "nim": "2409106057",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 5,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 4,
+        "catatan": "File angka/genap/ganjil tidak lengkap."
+      },
+      "soal3": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "File artikel.html tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      }
+    },
+    "total": 69,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "Fachlevi Muhammad",
+    "nim": "2409106059",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 5,
+        "catatan": "Isi proses.txt tidak sesuai atau kurang baris."
+      },
+      "soal4": {
+        "skor": 5,
+        "catatan": "Command yang dijelaskan kurang dari standar."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "File backup_home.sh tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "File aktivitas.log tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 40,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "Much. Trigusni Hermawan",
+    "nim": "2409106060",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "Direktori soal2 tidak ditemukan."
+      },
+      "soal3": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal6": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 90,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106061",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 2,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "File angka/genap/ganjil tidak lengkap."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "Direktori soal3 tidak ditemukan."
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 37,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "Richo Anan Rizky Putra",
+    "nim": "2409106062",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 7,
+        "catatan": "Isi aktivitas.log tidak lengkap."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      }
+    },
+    "total": 62,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106063",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "File angka/genap/ganjil tidak lengkap."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "File proses.txt tidak ditemukan/berupa direktori."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "Direktori soal4 tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "File network_info.txt tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "Direktori soal8 tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 0,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "Ridwan Nur Rahman",
+    "nim": "2409106064",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 5,
+        "catatan": "Isi proses.txt tidak sesuai atau kurang baris."
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 8,
+        "catatan": "Lengkap"
+      },
+      "soal6": {
+        "skor": 5,
+        "catatan": "Script tidak mengandung command tar."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 7,
+        "catatan": "Isi aktivitas.log tidak lengkap."
+      },
+      "soal9": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal10": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      }
+    },
+    "total": 70,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "Nou Julyanah Mazuwa",
+    "nim": "2409106066",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 9,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "Direktori soal3 tidak ditemukan."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "File manajemen_file.txt tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 8,
+        "catatan": "Lengkap"
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "File backup_home.sh tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "Direktori soal8 tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "File artikel.html tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      }
+    },
+    "total": 42,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "Wahyu Aditya",
+    "nim": "2409106067",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 5,
+        "catatan": "Script tidak mengandung command tar."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 70,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "Inayah Ramadhani",
+    "nim": "2409106068",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "File proses.txt tidak ditemukan/berupa direktori."
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "File backup_home.sh tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 7,
+        "catatan": "Isi aktivitas.log tidak lengkap."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 47,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106069",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 5,
+        "catatan": "Isi proses.txt tidak sesuai atau kurang baris."
+      },
+      "soal4": {
+        "skor": 5,
+        "catatan": "Command yang dijelaskan kurang dari standar."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "File backup_home.sh tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 45,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "JOVAN BAGAS PANGESTU",
+    "nim": "2409106071",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 9,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 6,
+        "catatan": "Lengkap"
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "File backup_home.sh tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 7,
+        "catatan": "Isi aktivitas.log tidak lengkap."
+      },
+      "soal9": {
+        "skor": 6,
+        "catatan": "Lengkap"
+      },
+      "soal10": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      }
+    },
+    "total": 73,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "saya sifwah fatin sofwani",
+    "nim": "2409106072",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 5,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "File backup_home.sh tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 14,
+        "catatan": "Lengkap"
+      },
+      "soal10": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      }
+    },
+    "total": 89,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "Muhammad Ridwanansyah Rahman",
+    "nim": "2409106073",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal6": {
+        "skor": 5,
+        "catatan": "Script tidak mengandung command tar."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      },
+      "soal10": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      }
+    },
+    "total": 90,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106075",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "File angka/genap/ganjil tidak lengkap."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "File proses.txt tidak ditemukan/berupa direktori."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "File manajemen_file.txt tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "File network_info.txt tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "File aktivitas.log tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 0,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "Razib Ramadhan",
+    "nim": "2409106076",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal6": {
+        "skor": 5,
+        "catatan": "Script tidak mengandung command tar."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal10": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      }
+    },
+    "total": 100,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "keysha khoirunnisa aulia khotim",
+    "nim": "2409106077",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      }
+    },
+    "total": 70,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "Muhammad Ilma Yusrian Fahmi",
+    "nim": "2409106079",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 5,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 4,
+        "catatan": "File angka/genap/ganjil tidak lengkap."
+      },
+      "soal3": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "File manajemen_file.txt tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal6": {
+        "skor": 5,
+        "catatan": "Script tidak mengandung command tar."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal10": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      }
+    },
+    "total": 79,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106081",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 6,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "File angka/genap/ganjil tidak lengkap."
+      },
+      "soal3": {
+        "skor": 5,
+        "catatan": "Isi proses.txt tidak sesuai atau kurang baris."
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "Direktori soal7 tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 7,
+        "catatan": "Isi aktivitas.log tidak lengkap."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 28,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106082",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Direktori soal1 tidak ditemukan."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "Direktori soal2 tidak ditemukan."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "Direktori soal3 tidak ditemukan."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "Direktori soal4 tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "Direktori soal7 tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "Direktori soal8 tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 0,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106083",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Direktori soal1 tidak ditemukan."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "Direktori soal2 tidak ditemukan."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "Direktori soal3 tidak ditemukan."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "Direktori soal4 tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "Direktori soal7 tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "Direktori soal8 tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 0,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106084",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 2,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "File angka/genap/ganjil tidak lengkap."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "File proses.txt tidak ditemukan/berupa direktori."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "File manajemen_file.txt tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "File backup_home.sh tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "File network_info.txt tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "File aktivitas.log tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 2,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106087",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Direktori soal1 tidak ditemukan."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "Direktori soal2 tidak ditemukan."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "Direktori soal3 tidak ditemukan."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "Direktori soal4 tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "Direktori soal7 tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "Direktori soal8 tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 0,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "Ega Clearesta Hananta",
+    "nim": "2409106088",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 3,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 5,
+        "catatan": "Isi proses.txt tidak sesuai atau kurang baris."
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 6,
+        "catatan": "Lengkap"
+      },
+      "soal6": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "File artikel.html tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 69,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "M.Fahrianor",
+    "nim": "2409106089",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "File backup_home.sh tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 14,
+        "catatan": "Lengkap"
+      },
+      "soal10": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      }
+    },
+    "total": 94,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106090",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Direktori soal1 tidak ditemukan."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "Direktori soal2 tidak ditemukan."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "Direktori soal3 tidak ditemukan."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "Direktori soal4 tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "Direktori soal7 tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "Direktori soal8 tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 0,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106091",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "File angka/genap/ganjil tidak lengkap."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "File proses.txt tidak ditemukan/berupa direktori."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "File manajemen_file.txt tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "File backup_home.sh tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "File network_info.txt tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "File aktivitas.log tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 0,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "Muhammad Farras Arhab Ince",
+    "nim": "2409106092",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "Direktori soal3 tidak ditemukan."
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 13,
+        "catatan": "Lengkap"
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 78,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106093",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "File angka/genap/ganjil tidak lengkap."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "File proses.txt tidak ditemukan/berupa direktori."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "File manajemen_file.txt tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "File network_info.txt tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "File aktivitas.log tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 0,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106094",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Direktori soal1 tidak ditemukan."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "Direktori soal2 tidak ditemukan."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "Direktori soal3 tidak ditemukan."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "Direktori soal4 tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "Direktori soal7 tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "Direktori soal8 tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 0,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106095",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Direktori soal1 tidak ditemukan."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "Direktori soal2 tidak ditemukan."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "Direktori soal3 tidak ditemukan."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "Direktori soal4 tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "File network_info.txt tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "Direktori soal8 tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 0,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "Danendra Hazzel Putra Wahana",
+    "nim": "2409106096",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 5,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "File aktivitas.log tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 45,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "<SayidAnnashirIkhwan>",
+    "nim": "2409106097",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal2": {
+        "skor": 7,
+        "catatan": "File angka/genap/ganjil tidak lengkap."
+      },
+      "soal3": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "Direktori soal4 tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "Direktori soal7 tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 52,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106098",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Direktori soal1 tidak ditemukan."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "Direktori soal2 tidak ditemukan."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "Direktori soal3 tidak ditemukan."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "Direktori soal4 tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "Direktori soal7 tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "Direktori soal8 tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 0,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106099",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 1,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 5,
+        "catatan": "Isi proses.txt tidak sesuai atau kurang baris."
+      },
+      "soal4": {
+        "skor": 5,
+        "catatan": "Command yang dijelaskan kurang dari standar."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 5,
+        "catatan": "Script tidak mengandung command tar."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "Direktori soal7 tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 7,
+        "catatan": "Isi aktivitas.log tidak lengkap."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 33,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106100",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Direktori soal1 tidak ditemukan."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "Direktori soal2 tidak ditemukan."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "Direktori soal3 tidak ditemukan."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "Direktori soal4 tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "Direktori soal7 tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "Direktori soal8 tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 0,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106101",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Direktori soal1 tidak ditemukan."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "Direktori soal2 tidak ditemukan."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "Direktori soal3 tidak ditemukan."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "Direktori soal4 tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "File profil.html tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "Direktori soal7 tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "Direktori soal8 tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "File artikel.html tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 0,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106103",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "File angka/genap/ganjil tidak lengkap."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "File proses.txt tidak ditemukan/berupa direktori."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "File manajemen_file.txt tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "File network_info.txt tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "File aktivitas.log tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 0,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "Ahmad Habibi",
+    "nim": "2409106104",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 4,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "Direktori soal2 tidak ditemukan."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "Direktori soal3 tidak ditemukan."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "Direktori soal4 tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "File profil.html tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "Direktori soal7 tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "Direktori soal8 tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 14,
+        "catatan": "Lengkap"
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 18,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106105",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Direktori soal1 tidak ditemukan."
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 5,
+        "catatan": "Isi proses.txt tidak sesuai atau kurang baris."
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 5,
+        "catatan": "Script tidak mengandung command tar."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      }
+    },
+    "total": 60,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "Dzaki Mubarak",
+    "nim": "2409106106",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "File backup_home.sh tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 65,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106108",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "Direktori soal2 tidak ditemukan."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "Direktori soal3 tidak ditemukan."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "Direktori soal4 tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "File profil.html tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "Direktori soal7 tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "Direktori soal8 tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "File artikel.html tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 0,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106109",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 9,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "Direktori soal2 tidak ditemukan."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "Direktori soal3 tidak ditemukan."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "Direktori soal4 tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "Direktori soal7 tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "Direktori soal8 tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 9,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106110",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Direktori soal1 tidak ditemukan."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "Direktori soal2 tidak ditemukan."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "Direktori soal3 tidak ditemukan."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "Direktori soal4 tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "Direktori soal7 tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "Direktori soal8 tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      }
+    },
+    "total": 5,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "Desya Oktavia Rumondor",
+    "nim": "2409106111",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 5,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 5,
+        "catatan": "Isi proses.txt tidak sesuai atau kurang baris."
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 5,
+        "catatan": "Script tidak mengandung command tar."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      }
+    },
+    "total": 65,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "rifqi al bukhari",
+    "nim": "2409106112",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 8,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal4": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "File profil.html tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 5,
+        "catatan": "Script tidak mengandung command tar."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 5,
+        "catatan": "Lengkap"
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 73,
+    "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106113",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Direktori soal1 tidak ditemukan."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "Direktori soal2 tidak ditemukan."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "Direktori soal3 tidak ditemukan."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "Direktori soal4 tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "File profil.html tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "File network_info.txt tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "File aktivitas.log tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "File artikel.html tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 0,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106114",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Direktori soal1 tidak ditemukan."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "Direktori soal2 tidak ditemukan."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "Direktori soal3 tidak ditemukan."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "Direktori soal4 tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "Direktori soal7 tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "Direktori soal8 tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 0,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "Ramadhan Riyan",
+    "nim": "2409106115",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal2": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal3": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "File manajemen_file.txt tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "File profil.html tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "File backup_home.sh tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "File network_info.txt tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "File aktivitas.log tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "File artikel.html tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 30,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106116",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "Direktori soal2 tidak ditemukan."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "Direktori soal3 tidak ditemukan."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "Direktori soal4 tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "Direktori soal7 tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "Direktori soal8 tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 0,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "#!/bin/bash",
+    "nim": "2409106117",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 8,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 4,
+        "catatan": "File angka/genap/ganjil tidak lengkap."
+      },
+      "soal3": {
+        "skor": 5,
+        "catatan": "Isi proses.txt tidak sesuai atau kurang baris."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "Direktori soal4 tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 5,
+        "catatan": "Isi network_info.txt kurang lengkap."
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 37,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "Ikhsan",
+    "nim": "2409106118",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Struktur direktori atau isi file tidak lengkap."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "File angka/genap/ganjil tidak lengkap."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "File proses.txt tidak ditemukan/berupa direktori."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "File manajemen_file.txt tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 6,
+        "catatan": "Lengkap"
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal8": {
+        "skor": 15,
+        "catatan": "Lengkap"
+      },
+      "soal9": {
+        "skor": 10,
+        "catatan": "Lengkap"
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 41,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  },
+  {
+    "nama": "-",
+    "nim": "2409106121",
+    "nilai_per_soal": {
+      "soal1": {
+        "skor": 0,
+        "catatan": "Direktori soal1 tidak ditemukan."
+      },
+      "soal2": {
+        "skor": 0,
+        "catatan": "Direktori soal2 tidak ditemukan."
+      },
+      "soal3": {
+        "skor": 0,
+        "catatan": "Direktori soal3 tidak ditemukan."
+      },
+      "soal4": {
+        "skor": 0,
+        "catatan": "Direktori soal4 tidak ditemukan."
+      },
+      "soal5": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal6": {
+        "skor": 0,
+        "catatan": "Direktori soal6 tidak ditemukan."
+      },
+      "soal7": {
+        "skor": 0,
+        "catatan": "Direktori soal7 tidak ditemukan."
+      },
+      "soal8": {
+        "skor": 0,
+        "catatan": "Direktori soal8 tidak ditemukan."
+      },
+      "soal9": {
+        "skor": 0,
+        "catatan": "Direktori web NIM tidak ditemukan."
+      },
+      "soal10": {
+        "skor": 0,
+        "catatan": "Command chmod tidak ditemukan di history."
+      }
+    },
+    "total": 0,
+    "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
+  }
+]

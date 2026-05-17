@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hasil Nilai Praktikum</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0f14;
+    --surface: #14171f;
+    --surface2: #1c2030;
+    --border: #252b3b;
+    --accent: #4fffb0;
+    --accent2: #ff6b6b;
+    --accent3: #ffd166;
+    --text: #e8ecf4;
+    --muted: #6b7594;
+    --card-radius: 12px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Mono', monospace;
+    min-height: 100vh;
+    padding: 0 0 60px;
+  }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, #0d0f14 0%, #111827 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 40px 32px 32px;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(79,255,176,0.07) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .header-tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: rgba(79,255,176,0.08);
+    border: 1px solid rgba(79,255,176,0.2);
+    padding: 4px 12px;
+    border-radius: 100px;
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(24px, 4vw, 42px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 8px;
+  }
+  h1 span { color: var(--accent); }
+  .header-sub {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 4px;
+  }
+
+  /* STATS */
+  .stats-bar {
+    max-width: 1100px;
+    margin: 28px auto 0;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .stat-chip {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+  }
+  .stat-chip .val {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Syne', sans-serif;
+  }
+  .stat-chip .lbl { color: var(--muted); }
+  .stat-chip.green .val { color: var(--accent); }
+  .stat-chip.red .val { color: var(--accent2); }
+  .stat-chip.yellow .val { color: var(--accent3); }
+
+  /* CONTROLS */
+  .controls {
+    max-width: 1100px;
+    margin: 28px auto 0;
+    padding: 0 32px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .search-wrap {
+    flex: 1;
+    min-width: 200px;
+    position: relative;
+  }
+  .search-wrap input {
+    width: 100%;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    padding: 9px 14px 9px 36px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .search-wrap input:focus { border-color: var(--accent); }
+  .search-wrap::before {
+    content: '⌕';
+    position: absolute;
+    left: 12px; top: 50%;
+    transform: translateY(-50%);
+    color: var(--muted);
+    font-size: 16px;
+    pointer-events: none;
+  }
+  .filter-btns {
+    display: flex;
+    gap: 6px;
+  }
+  .filter-btn {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    padding: 8px 14px;
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .filter-btn.active { background: rgba(79,255,176,0.1); border-color: var(--accent); color: var(--accent); }
+
+  /* SORT */
+  .sort-select {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    padding: 8px 12px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  /* MAIN TABLE */
+  .main {
+    max-width: 1100px;
+    margin: 24px auto 0;
+    padding: 0 32px;
+  }
+
+  /* RESULT COUNT */
+  .result-count {
+    font-size: 11px;
+    color: var(--muted);
+    margin-bottom: 12px;
+    letter-spacing: 0.05em;
+  }
+  .result-count span { color: var(--accent); }
+
+  /* TABLE */
+  .table-wrap {
+    overflow-x: auto;
+    border-radius: var(--card-radius);
+    border: 1px solid var(--border);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+  }
+  thead th {
+    background: var(--surface2);
+    padding: 12px 14px;
+    text-align: left;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.15s;
+  }
+  thead th:hover { color: var(--accent); }
+  thead th.sorted { color: var(--accent); }
+  thead th .sort-arrow { display: inline-block; margin-left: 4px; opacity: 0.5; }
+  thead th.sorted .sort-arrow { opacity: 1; }
+
+  tbody tr {
+    border-bottom: 1px solid var(--border);
+    transition: background 0.12s;
+    cursor: pointer;
+  }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:hover { background: rgba(255,255,255,0.03); }
+  tbody tr.active-row { background: rgba(79,255,176,0.04) !important; }
+  tbody td {
+    padding: 12px 14px;
+    vertical-align: middle;
+  }
+  .td-rank {
+    color: var(--muted);
+    font-size: 11px;
+    width: 36px;
+    text-align: center;
+  }
+  .td-rank.top3 { color: var(--accent3); font-weight: 700; font-size: 13px; }
+  .td-nim { color: var(--muted); font-size: 11px; }
+  .td-nama { font-weight: 500; color: var(--text); }
+  .td-nama.unknown { color: var(--muted); font-style: italic; }
+
+  /* score pills per soal */
+  .soal-grid {
+    display: flex;
+    gap: 3px;
+    flex-wrap: nowrap;
+  }
+  .soal-pill {
+    display: inline-block;
+    width: 28px;
+    height: 20px;
+    border-radius: 4px;
+    font-size: 9px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid transparent;
+  }
+  .soal-pill.full { background: rgba(79,255,176,0.12); color: var(--accent); border-color: rgba(79,255,176,0.2); }
+  .soal-pill.partial { background: rgba(255,209,102,0.12); color: var(--accent3); border-color: rgba(255,209,102,0.2); }
+  .soal-pill.zero { background: rgba(255,107,107,0.08); color: #ff6b6b99; border-color: rgba(255,107,107,0.1); }
+
+  /* TOTAL SCORE */
+  .total-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-family: 'Syne', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    min-width: 56px;
+    justify-content: center;
+  }
+  .total-badge.grade-a { background: rgba(79,255,176,0.12); color: var(--accent); border: 1px solid rgba(79,255,176,0.25); }
+  .total-badge.grade-b { background: rgba(100,210,255,0.12); color: #64d2ff; border: 1px solid rgba(100,210,255,0.25); }
+  .total-badge.grade-c { background: rgba(255,209,102,0.12); color: var(--accent3); border: 1px solid rgba(255,209,102,0.25); }
+  .total-badge.grade-d { background: rgba(255,107,107,0.10); color: var(--accent2); border: 1px solid rgba(255,107,107,0.2); }
+  .total-badge.grade-e { background: rgba(255,107,107,0.05); color: #ff4444; border: 1px solid rgba(255,107,107,0.1); }
+
+  /* DETAIL PANEL */
+  .detail-panel {
+    display: none;
+    background: var(--surface2);
+  }
+  .detail-panel.open { display: table-row; }
+  .detail-inner {
+    padding: 16px 20px 20px;
+    border-top: 1px dashed var(--border);
+  }
+  .detail-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .soal-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .soal-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 12px;
+  }
+  .soal-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+  .soal-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
+  .soal-score {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+  }
+  .soal-score.full { color: var(--accent); }
+  .soal-score.partial { color: var(--accent3); }
+  .soal-score.zero { color: var(--accent2); }
+  .soal-catatan {
+    font-size: 11px;
+    color: var(--muted);
+    line-height: 1.4;
+  }
+  .catatan-umum-box {
+    background: rgba(79,255,176,0.04);
+    border: 1px solid rgba(79,255,176,0.1);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+  .catatan-umum-box strong { color: var(--accent); margin-right: 6px; }
+
+  /* empty state */
+  .empty-row td {
+    text-align: center;
+    padding: 40px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  /* progress bar in total col */
+  .score-bar-wrap {
+    width: 60px;
+    height: 3px;
+    background: var(--border);
+    border-radius: 10px;
+    margin-top: 4px;
+    overflow: hidden;
+  }
+  .score-bar-fill {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.3s;
+  }
+
+  /* mobile */
+  @media (max-width: 700px) {
+    .header { padding: 28px 16px 24px; }
+    .controls { padding: 0 16px; }
+    .main { padding: 0 16px; }
+    .soal-grid { display: none; }
+    .filter-btns { flex-wrap: wrap; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-inner">
+    <div class="header-tag">Praktikum · Sistem Operasi</div>
+    <h1>Rekap <span>Nilai</span><br>Mahasiswa</h1>
+    <p class="header-sub">Data otomatis dari penilaian sistem · <span id="tgl"></span></p>
+    <div class="stats-bar" id="statsBar"></div>
+  </div>
+</div>
+
+<div class="controls">
+  <div class="search-wrap">
+    <input type="text" id="searchInput" placeholder="Cari nama atau NIM...">
+  </div>
+  <div class="filter-btns">
+    <button class="filter-btn active" data-filter="all">Semua</button>
+    <button class="filter-btn" data-filter="a">A (≥85)</button>
+    <button class="filter-btn" data-filter="b">B (70–84)</button>
+    <button class="filter-btn" data-filter="c">C (55–69)</button>
+    <button class="filter-btn" data-filter="d">D (40–54)</button>
+    <button class="filter-btn" data-filter="e">E (&lt;40)</button>
+  </div>
+  <select class="sort-select" id="sortSelect">
+    <option value="nim_asc">NIM ↑</option>
+    <option value="nim_desc">NIM ↓</option>
+    <option value="total_desc">Nilai ↓</option>
+    <option value="total_asc">Nilai ↑</option>
+    <option value="nama_asc">Nama A–Z</option>
+  </select>
+</div>
+
+<div class="main">
+  <div class="result-count" id="resultCount"></div>
+  <div class="table-wrap">
+    <table id="mainTable">
+      <thead>
+        <tr>
+          <th class="td-rank">#</th>
+          <th>NIM</th>
+          <th>Nama</th>
+          <th>Per Soal</th>
+          <th>Total</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+let DATA = [];
+
+// --- LOAD DATA ---
+async function loadData() {
+  try {
+    const res = await fetch('hasil.json');
+    if (!res.ok) throw new Error('Gagal memuat hasil.json: ' + res.status);
+    DATA = await res.json();
+  } catch (err) {
+    document.getElementById('tableBody').innerHTML =
+      `<tr class="empty-row"><td colspan="6">⚠️ Gagal memuat data: ${err.message}</td></tr>`;
+    return false;
+  }
+  return true;
+}
+
+
+// --- GRADE UTIL ---
+function getGrade(total) {
+  const t = Math.min(total, 100);
+  if (t >= 85) return 'A';
+  if (t >= 70) return 'B';
+  if (t >= 55) return 'C';
+  if (t >= 40) return 'D';
+  return 'E';
+}
+function gradeClass(g) {
+  return { A: 'grade-a', B: 'grade-b', C: 'grade-c', D: 'grade-d', E: 'grade-e' }[g];
+}
+function getMaxSoal(key) {
+  const mx = { soal1:10,soal2:10,soal3:10,soal4:10,soal5:10,soal6:10,soal7:10,soal8:15,soal9:15,soal10:5 };
+  return mx[key] || 10;
+}
+
+// --- STATS ---
+function buildStats() {
+  const totals = DATA.map(d => d.total);
+  const capped = totals.map(t => Math.min(t, 100));
+  const avg = (capped.reduce((a,b)=>a+b,0)/capped.length).toFixed(1);
+  const max = Math.max(...totals);
+  const min = Math.min(...totals);
+  const passing = capped.filter(t=>t>=55).length;
+  const bar = document.getElementById('statsBar');
+  bar.innerHTML = `
+    <div class="stat-chip"><div><div class="val">${DATA.length}</div><div class="lbl">Mahasiswa</div></div></div>
+    <div class="stat-chip yellow"><div><div class="val">${avg}</div><div class="lbl">Rata-rata</div></div></div>
+    <div class="stat-chip green"><div><div class="val">${max}</div><div class="lbl">Tertinggi</div></div></div>
+    <div class="stat-chip red"><div><div class="val">${min}</div><div class="lbl">Terendah</div></div></div>
+    <div class="stat-chip green"><div><div class="val">${passing}</div><div class="lbl">Lulus (≥55)</div></div></div>
+    <div class="stat-chip red"><div><div class="val">${DATA.length - passing}</div><div class="lbl">Tidak Lulus</div></div></div>
+  `;
+  document.getElementById('tgl').textContent = new Date().toLocaleDateString('id-ID', {day:'numeric',month:'long',year:'numeric'});
+}
+
+// --- RENDER ---
+let activeRow = null;
+let currentFilter = 'all';
+let currentSort = 'nim_asc';
+let currentSearch = '';
+
+function filterData() {
+  let d = [...DATA];
+  // search
+  if (currentSearch) {
+    const q = currentSearch.toLowerCase();
+    d = d.filter(x => x.nama.toLowerCase().includes(q) || x.nim.includes(q));
+  }
+  // filter grade
+  if (currentFilter !== 'all') {
+    d = d.filter(x => getGrade(Math.min(x.total,100)).toLowerCase() === currentFilter);
+  }
+  // sort
+  if (currentSort === 'nim_asc') d.sort((a,b)=>a.nim.localeCompare(b.nim));
+  else if (currentSort === 'nim_desc') d.sort((a,b)=>b.nim.localeCompare(a.nim));
+  else if (currentSort === 'total_desc') d.sort((a,b)=>b.total-a.total);
+  else if (currentSort === 'total_asc') d.sort((a,b)=>a.total-b.total);
+  else if (currentSort === 'nama_asc') d.sort((a,b)=>a.nama.localeCompare(b.nama,'id'));
+  return d;
+}
+
+function pillClass(skor, max) {
+  if (skor === 0) return 'zero';
+  if (skor >= max) return 'full';
+  return 'partial';
+}
+
+function renderTable() {
+  const d = filterData();
+  const tbody = document.getElementById('tableBody');
+  document.getElementById('resultCount').innerHTML = `Menampilkan <span>${d.length}</span> dari ${DATA.length} mahasiswa`;
+
+  if (d.length === 0) {
+    tbody.innerHTML = `<tr class="empty-row"><td colspan="6">Tidak ada data yang cocok.</td></tr>`;
+    return;
+  }
+
+  // rank by total for display
+  const sorted = [...DATA].sort((a,b)=>b.total-a.total);
+  const rankMap = {};
+  sorted.forEach((x,i) => { if (!rankMap[x.nim]) rankMap[x.nim] = i+1; });
+
+  tbody.innerHTML = '';
+  d.forEach((mhs, idx) => {
+    const rank = rankMap[mhs.nim];
+    const grade = getGrade(Math.min(mhs.total,100));
+    const soalKeys = Object.keys(mhs.nilai_per_soal);
+    const pills = soalKeys.map(k => {
+      const s = mhs.nilai_per_soal[k];
+      const mx = getMaxSoal(k);
+      return `<span class="soal-pill ${pillClass(s.skor, mx)}" title="${k}: ${s.skor}/${mx}\n${s.catatan}">${s.skor}</span>`;
+    }).join('');
+
+    const pct = Math.min(100, mhs.total);
+    const barColor = grade==='A'?'#4fffb0':grade==='B'?'#64d2ff':grade==='C'?'#ffd166':grade==='D'?'#ff9f43':'#ff6b6b';
+    const namaClass = (mhs.nama === '-' || mhs.nama.startsWith('#')) ? 'unknown' : '';
+    const namaDisplay = (mhs.nama === '-' || mhs.nama.startsWith('#')) ? '(tidak diketahui)' : mhs.nama;
+
+    const tr = document.createElement('tr');
+    tr.dataset.nim = mhs.nim;
+    tr.innerHTML = `
+      <td class="td-rank ${rank<=3?'top3':''}">${rank<=3?['🥇','🥈','🥉'][rank-1]:rank}</td>
+      <td class="td-nim">${mhs.nim}</td>
+      <td class="td-nama ${namaClass}">${namaDisplay}</td>
+      <td><div class="soal-grid">${pills}</div></td>
+      <td>
+        <div class="total-badge ${gradeClass(grade)}">${mhs.total}</div>
+        <div class="score-bar-wrap"><div class="score-bar-fill" style="width:${pct}%;background:${barColor}"></div></div>
+      </td>
+      <td><div class="total-badge ${gradeClass(grade)}">${grade}</div></td>
+    `;
+    tr.addEventListener('click', () => toggleDetail(tr, mhs));
+    tbody.appendChild(tr);
+
+    // detail row
+    const detailTr = document.createElement('tr');
+    detailTr.className = 'detail-panel';
+    detailTr.dataset.detailFor = mhs.nim;
+    detailTr.innerHTML = `<td colspan="6"><div class="detail-inner" id="detail-${mhs.nim}"></div></td>`;
+    tbody.appendChild(detailTr);
+  });
+}
+
+function toggleDetail(tr, mhs) {
+  const detailTr = document.querySelector(`tr[data-detail-for="${mhs.nim}"]`);
+  const isOpen = detailTr.classList.contains('open');
+
+  // close all
+  document.querySelectorAll('.detail-panel.open').forEach(el => el.classList.remove('open'));
+  document.querySelectorAll('tbody tr.active-row').forEach(el => el.classList.remove('active-row'));
+
+  if (!isOpen) {
+    detailTr.classList.add('open');
+    tr.classList.add('active-row');
+    // render detail
+    const container = document.getElementById(`detail-${mhs.nim}`);
+    const soalKeys = Object.keys(mhs.nilai_per_soal);
+    const cards = soalKeys.map(k => {
+      const s = mhs.nilai_per_soal[k];
+      const mx = getMaxSoal(k);
+      const cls = pillClass(s.skor, mx);
+      return `<div class="soal-card">
+        <div class="soal-card-header">
+          <span class="soal-label">${k.replace('soal','Soal ')}</span>
+          <span class="soal-score ${cls}">${s.skor}<span style="font-size:10px;font-weight:400;color:var(--muted)">/${mx}</span></span>
+        </div>
+        <div class="soal-catatan">${s.catatan}</div>
+      </div>`;
+    }).join('');
+    container.innerHTML = `
+      <div class="detail-title">↳ Detail Nilai · ${mhs.nim}</div>
+      <div class="soal-detail-grid">${cards}</div>
+      <div class="catatan-umum-box"><strong>Catatan Umum</strong>${mhs.catatan_umum}</div>
+    `;
+  }
+}
+
+// --- EVENTS ---
+document.getElementById('searchInput').addEventListener('input', e => {
+  currentSearch = e.target.value;
+  renderTable();
+});
+
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentFilter = btn.dataset.filter;
+    renderTable();
+  });
+});
+
+document.getElementById('sortSelect').addEventListener('change', e => {
+  currentSort = e.target.value;
+  renderTable();
+});
+
+// --- INIT ---
+loadData().then(ok => {
+  if (ok) {
+    buildStats();
+    renderTable();
+  }
+});
+</script>
+</body>
+</html>

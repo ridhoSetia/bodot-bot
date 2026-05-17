@@ -13,6 +13,6 @@ services:
     
     # Volume untuk menyimpan rekaman audio agar tidak hilang saat container dihapus 
     volumes:
-      - ./recordings:/app/recordings
+      - ./recordings:/app/recordings:ro
     
     restart: always

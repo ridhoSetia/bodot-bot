@@ -87,6 +87,13 @@ async def get_dashboard(request: Request):
         context={"history": history[1:]}
     )
 
+@app.get("/pa-so", response_class=HTMLResponse)
+async def get_hasil_pa(request: Request):
+    return templates.TemplateResponse(
+        request=request, 
+        name="hasil-pa-so.html", 
+    )
+
 @app.websocket("/ws")
 async def websocket_endpoint(websocket: WebSocket):
     await manager.connect(websocket)
