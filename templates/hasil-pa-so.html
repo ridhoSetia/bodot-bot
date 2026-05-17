@@ -430,13 +430,14 @@
   </div>
 </div>
 
+{% raw %}
 <script>
 let DATA = [];
 
 // --- LOAD DATA ---
 async function loadData() {
   try {
-    const res = await fetch('hasil.json');
+    const res = await fetch('/static/hasil.json');
     if (!res.ok) throw new Error('Gagal memuat hasil.json: ' + res.status);
     DATA = await res.json();
   } catch (err) {
@@ -635,5 +636,6 @@ loadData().then(ok => {
   }
 });
 </script>
+{% endraw %}
 </body>
 </html>
