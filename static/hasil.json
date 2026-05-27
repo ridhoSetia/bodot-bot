@@ -24,8 +24,8 @@
         "catatan": "Lengkap"
       },
       "soal6": {
-        "skor": 2,
-        "catatan": "File backup_home.sh tidak ditemukan sesuai lokasi yang seharusnya."
+        "skor": 0,
+        "catatan": "File backup_home.sh tidak ditemukan."
       },
       "soal7": {
         "skor": 10,
@@ -40,11 +40,11 @@
         "catatan": "Lengkap"
       },
       "soal10": {
-        "skor": 5,
+        "skor": 10,
         "catatan": "Lengkap"
       }
     },
-    "total": 97,
+    "total": 100,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -88,11 +88,11 @@
         "catatan": "Direktori web NIM tidak ditemukan."
       },
       "soal10": {
-        "skor": 5,
+        "skor": 10,
         "catatan": "Lengkap"
       }
     },
-    "total": 70,
+    "total": 75,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -136,11 +136,11 @@
         "catatan": "Lengkap"
       },
       "soal10": {
-        "skor": 5,
+        "skor": 10,
         "catatan": "Lengkap"
       }
     },
-    "total": 95,
+    "total": 100,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -184,11 +184,11 @@
         "catatan": "Lengkap"
       },
       "soal10": {
-        "skor": 5,
+        "skor": 10,
         "catatan": "Lengkap"
       }
     },
-    "total": 80,
+    "total": 85,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -232,11 +232,11 @@
         "catatan": "File artikel.html tidak ditemukan."
       },
       "soal10": {
-        "skor": 5,
+        "skor": 10,
         "catatan": "Lengkap"
       }
     },
-    "total": 65,
+    "total": 70,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -280,11 +280,11 @@
         "catatan": "Lengkap"
       },
       "soal10": {
-        "skor": 0,
-        "catatan": "Command chmod tidak ditemukan di history."
+        "skor": 10,
+        "catatan": "Lengkap"
       }
     },
-    "total": 84,
+    "total": 94,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -328,11 +328,11 @@
         "catatan": "Lengkap"
       },
       "soal10": {
-        "skor": 5,
+        "skor": 10,
         "catatan": "Lengkap"
       }
     },
-    "total": 90,
+    "total": 95,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -376,11 +376,11 @@
         "catatan": "Direktori web NIM tidak ditemukan."
       },
       "soal10": {
-        "skor": 5,
+        "skor": 10,
         "catatan": "Lengkap"
       }
     },
-    "total": 5,
+    "total": 10,
     "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
   },
   {
@@ -472,11 +472,11 @@
         "catatan": "File artikel.html tidak ditemukan."
       },
       "soal10": {
-        "skor": 5,
+        "skor": 10,
         "catatan": "Lengkap"
       }
     },
-    "total": 45,
+    "total": 50,
     "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
   },
   {
@@ -520,11 +520,11 @@
         "catatan": "File artikel.html tidak ditemukan."
       },
       "soal10": {
-        "skor": 5,
+        "skor": 10,
         "catatan": "Lengkap"
       }
     },
-    "total": 69,
+    "total": 74,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -712,11 +712,11 @@
         "catatan": "Direktori web NIM tidak ditemukan."
       },
       "soal10": {
-        "skor": 5,
+        "skor": 10,
         "catatan": "Lengkap"
       }
     },
-    "total": 62,
+    "total": 67,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -808,11 +808,11 @@
         "catatan": "Lengkap"
       },
       "soal10": {
-        "skor": 5,
+        "skor": 10,
         "catatan": "Lengkap"
       }
     },
-    "total": 65,
+    "total": 70,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -856,11 +856,11 @@
         "catatan": "File artikel.html tidak ditemukan."
       },
       "soal10": {
-        "skor": 5,
+        "skor": 10,
         "catatan": "Lengkap"
       }
     },
-    "total": 42,
+    "total": 47,
     "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
   },
   {
@@ -1048,11 +1048,11 @@
         "catatan": "Lengkap"
       },
       "soal10": {
-        "skor": 5,
+        "skor": 10,
         "catatan": "Lengkap"
       }
     },
-    "total": 73,
+    "total": 78,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -1096,11 +1096,11 @@
         "catatan": "Lengkap"
       },
       "soal10": {
-        "skor": 5,
+        "skor": 10,
         "catatan": "Lengkap"
       }
     },
-    "total": 89,
+    "total": 94,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -1144,11 +1144,11 @@
         "catatan": "Lengkap"
       },
       "soal10": {
-        "skor": 5,
+        "skor": 10,
         "catatan": "Lengkap"
       }
     },
-    "total": 85,
+    "total": 90,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -1240,11 +1240,11 @@
         "catatan": "Lengkap"
       },
       "soal10": {
-        "skor": 5,
+        "skor": 10,
         "catatan": "Lengkap"
       }
     },
-    "total": 95,
+    "total": 100,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -1288,11 +1288,11 @@
         "catatan": "Direktori web NIM tidak ditemukan."
       },
       "soal10": {
-        "skor": 5,
+        "skor": 10,
         "catatan": "Lengkap"
       }
     },
-    "total": 70,
+    "total": 75,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -1336,11 +1336,11 @@
         "catatan": "Lengkap"
       },
       "soal10": {
-        "skor": 5,
+        "skor": 10,
         "catatan": "Lengkap"
       }
     },
-    "total": 74,
+    "total": 79,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -1672,11 +1672,11 @@
         "catatan": "Lengkap"
       },
       "soal10": {
-        "skor": 5,
+        "skor": 10,
         "catatan": "Lengkap"
       }
     },
-    "total": 94,
+    "total": 99,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -2392,7 +2392,7 @@
         "catatan": "Direktori web NIM tidak ditemukan."
       },
       "soal10": {
-        "skor": 5,
+        "skor": 10,
         "catatan": "Lengkap"
       }
     },
@@ -2584,11 +2584,11 @@
         "catatan": "Direktori web NIM tidak ditemukan."
       },
       "soal10": {
-        "skor": 5,
+        "skor": 10,
         "catatan": "Lengkap"
       }
     },
-    "total": 5,
+    "total": 10,
     "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
   },
   {
@@ -2632,7 +2632,7 @@
         "catatan": "Direktori web NIM tidak ditemukan."
       },
       "soal10": {
-        "skor": 5,
+        "skor": 10,
         "catatan": "Lengkap"
       }
     },
@@ -2684,7 +2684,7 @@
         "catatan": "Command chmod tidak ditemukan di history."
       }
     },
-    "total": 73,
+    "total": 68,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
