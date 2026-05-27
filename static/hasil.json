@@ -24,8 +24,8 @@
         "catatan": "Lengkap"
       },
       "soal6": {
-        "skor": 0,
-        "catatan": "File backup_home.sh tidak ditemukan."
+        "skor": 2,
+        "catatan": "File backup_home.sh tidak ditemukan sesuai lokasi yang seharusnya."
       },
       "soal7": {
         "skor": 10,
