@@ -264,7 +264,7 @@
         "catatan": "Lengkap"
       },
       "soal6": {
-        "skor": 5,
+        "skor": 0,
         "catatan": "Script tidak mengandung command tar."
       },
       "soal7": {
@@ -792,7 +792,7 @@
         "catatan": "Lengkap"
       },
       "soal6": {
-        "skor": 5,
+        "skor": 0,
         "catatan": "Script tidak mengandung command tar."
       },
       "soal7": {
@@ -888,7 +888,7 @@
         "catatan": "Direktori web NIM tidak ditemukan."
       },
       "soal6": {
-        "skor": 5,
+        "skor": 0,
         "catatan": "Script tidak mengandung command tar."
       },
       "soal7": {
@@ -1128,7 +1128,7 @@
         "catatan": "Lengkap"
       },
       "soal6": {
-        "skor": 5,
+        "skor": 1,
         "catatan": "Script tidak mengandung command tar."
       },
       "soal7": {
@@ -1224,7 +1224,7 @@
         "catatan": "Lengkap"
       },
       "soal6": {
-        "skor": 5,
+        "skor": 0,
         "catatan": "Script tidak mengandung command tar."
       },
       "soal7": {
@@ -1320,7 +1320,7 @@
         "catatan": "Lengkap"
       },
       "soal6": {
-        "skor": 5,
+        "skor": 3,
         "catatan": "Script tidak mengandung command tar."
       },
       "soal7": {
@@ -1608,7 +1608,7 @@
         "catatan": "Lengkap"
       },
       "soal6": {
-        "skor": 10,
+        "skor": 0,
         "catatan": "Lengkap"
       },
       "soal7": {
@@ -2136,7 +2136,7 @@
         "catatan": "Direktori web NIM tidak ditemukan."
       },
       "soal6": {
-        "skor": 5,
+        "skor": 0,
         "catatan": "Script tidak mengandung command tar."
       },
       "soal7": {
@@ -2376,7 +2376,7 @@
         "catatan": "Direktori web NIM tidak ditemukan."
       },
       "soal6": {
-        "skor": 5,
+        "skor": 0,
         "catatan": "Script tidak mengandung command tar."
       },
       "soal7": {
@@ -2616,7 +2616,7 @@
         "catatan": "Direktori web NIM tidak ditemukan."
       },
       "soal6": {
-        "skor": 5,
+        "skor": 0,
         "catatan": "Script tidak mengandung command tar."
       },
       "soal7": {
@@ -2664,7 +2664,7 @@
         "catatan": "File profil.html tidak ditemukan."
       },
       "soal6": {
-        "skor": 5,
+        "skor": 0,
         "catatan": "Script tidak mengandung command tar."
       },
       "soal7": {
