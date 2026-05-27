@@ -44,7 +44,7 @@
         "catatan": "Lengkap"
       }
     },
-    "total": 95,
+    "total": 97,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -284,7 +284,7 @@
         "catatan": "Command chmod tidak ditemukan di history."
       }
     },
-    "total": 89,
+    "total": 84,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -600,8 +600,8 @@
         "catatan": "Lengkap"
       },
       "soal6": {
-        "skor": 10,
-        "catatan": "Lengkap"
+        "skor": 8,
+        "catatan": "Lengkap tapi penamaan file backup tidak tepat"
       },
       "soal7": {
         "skor": 10,
@@ -620,7 +620,7 @@
         "catatan": "Command chmod tidak ditemukan di history."
       }
     },
-    "total": 90,
+    "total": 88,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -812,7 +812,7 @@
         "catatan": "Lengkap"
       }
     },
-    "total": 70,
+    "total": 65,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -908,7 +908,7 @@
         "catatan": "Command chmod tidak ditemukan di history."
       }
     },
-    "total": 70,
+    "total": 65,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -1128,7 +1128,7 @@
         "catatan": "Lengkap"
       },
       "soal6": {
-        "skor": 1,
+        "skor": 0,
         "catatan": "Script tidak mengandung command tar."
       },
       "soal7": {
@@ -1148,7 +1148,7 @@
         "catatan": "Lengkap"
       }
     },
-    "total": 90,
+    "total": 85,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -1244,7 +1244,7 @@
         "catatan": "Lengkap"
       }
     },
-    "total": 100,
+    "total": 95,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -1320,7 +1320,7 @@
         "catatan": "Lengkap"
       },
       "soal6": {
-        "skor": 3,
+        "skor": 0,
         "catatan": "Script tidak mengandung command tar."
       },
       "soal7": {
@@ -1340,7 +1340,7 @@
         "catatan": "Lengkap"
       }
     },
-    "total": 79,
+    "total": 74,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -1628,7 +1628,7 @@
         "catatan": "Command chmod tidak ditemukan di history."
       }
     },
-    "total": 69,
+    "total": 59,
     "catatan_umum": "Indikasi copy-paste massal tidak terdeteksi secara otomatis."
   },
   {
@@ -2156,7 +2156,7 @@
         "catatan": "Command chmod tidak ditemukan di history."
       }
     },
-    "total": 33,
+    "total": 28,
     "catatan_umum": "Hasil pengerjaan sangat minim atau tidak selesai."
   },
   {
