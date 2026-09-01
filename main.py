@@ -18,8 +18,9 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 load_dotenv()
-VOICE_ID = "id-ID-ArdiNeural"
+VOICE_ID = os.getenv("VOICE_ID", "id-ID-ArdiNeural")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+GROQ_MODEL = os.getenv("GROQ_MODEL", "qwen/qwen3.8-27b")
 client = Groq(api_key=GROQ_API_KEY)
 
 app = FastAPI()
@@ -75,7 +76,7 @@ def process_text_with_ai(user_text: str) -> str:
 
     try:
         chat = client.chat.completions.create(
-            messages=history, model="llama-3.3-70b-versatile", temperature=0.7, max_tokens=150
+            messages=history, model=GROQ_MODEL, temperature=0.7, max_tokens=150
         )
         reply = chat.choices[0].message.content.strip()
         history.append({"role": "assistant", "content": reply})
